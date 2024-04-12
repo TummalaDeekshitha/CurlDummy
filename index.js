@@ -10,6 +10,11 @@ app.get("/getData",async(req,res)=>{
 res.send(c);
 
 })
+app.post("/postData",async(req,res)=>{
+    console.log(req);
+    res.status("success").status(200);
+    
+})
 app.listen(7009,()=>{
     console.log("connected to port");
 })

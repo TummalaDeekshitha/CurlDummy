@@ -6,15 +6,15 @@ const jobschema=new mongoose.Schema({
         required:true},
 
  totalapplications: {type:Number,
-        required:true},
+        required:false},
   openings:{type:Number,
-  required:true},
+  required:false},
   lastdate: {
     type: Date, 
-    required: true},
+    required: false},
  description:{
     type:String,
-    required:true
+    required:false
  },
  logo:{
     data:Buffer,
@@ -23,7 +23,7 @@ const jobschema=new mongoose.Schema({
 },
 employeremail:{
   type:String,
-  required:true,
+  required:false,
 
 }
 
